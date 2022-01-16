@@ -11,7 +11,7 @@ export default function Diagnosis() {
   const [counter, setCounter] = useState(0);
   const { data, error } = useSWR(
     `https://medisearch.deta.dev/get_illness${
-      window.location.href.split("http://localhost:3000/diagnosis")[1]
+      window.location.href.split("https://medisearch.scidroid.co/diagnosis")[1]
     }`,
     fetcher
   );

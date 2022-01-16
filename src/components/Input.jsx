@@ -46,7 +46,7 @@ export default function InputForm() {
         transitionTimingFunction="ease"
         placeholder="Select your sex"
         label="What is your sex?"
-        description="We need this for te most accurate results"
+        description="We need this for the most accurate results"
         size="md"
         required
         data={[
@@ -66,7 +66,8 @@ export default function InputForm() {
         required
         label="Your age"
         description="Your age help us to determinate your possible illness"
-      >
+	size="md"
+       >
         <Input
           id="input-age"
           {...form.getInputProps("age", { type: "number" })}

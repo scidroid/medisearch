@@ -14,18 +14,20 @@ export default function Header() {
         padding: "0.5rem 1rem",
       }}
     >
-      <p
-        style={{
-          fontSize: "3rem",
-          fontWeight: "bold",
-          margin: 0,
-          fontFamily: "sans-serif",
-          boxShadow:
-            "inset 0 -0.1666666667em 0 0 #fff, inset 0 -0.3333333333em 0 0 red",
-        }}
-      >
-        MediSearch
-      </p>
+      <Link href="/">
+        <p
+          style={{
+            fontSize: "3rem",
+            fontWeight: "bold",
+            margin: 0,
+            fontFamily: "sans-serif",
+            boxShadow:
+              "inset 0 -0.1666666667em 0 0 #fff, inset 0 -0.3333333333em 0 0 red",
+          }}
+        >
+          MediSearch
+        </p>
+      </Link>
       {isAuthenticated ? (
         <Button
           onClick={() => logout()}
